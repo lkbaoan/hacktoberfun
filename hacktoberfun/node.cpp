@@ -122,27 +122,17 @@ void duyet_cay_level(NODE *root)
 		push(root);
 
 	while (!is_empty())
-
 	{
-
 		pop(&p);
-
 		printf("%d ", p->element);
-
 		if (p->left != NULL)
-
 			push(p->left);
-
 		if (p->right != NULL)
-
 			push(p->right);
-
 	}
-
 }
 
 int main()
-
 {
 
 	khoi_tao_cay(&root);
